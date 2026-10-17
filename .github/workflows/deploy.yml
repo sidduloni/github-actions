@@ -32,6 +32,7 @@ jobs:
           host: ${{ secrets.CPANEL_HOST }}
           username: ${{ secrets.CPANEL_USER }}
           key: ${{ secrets.CPANEL_KEY }}
+          passphrase: ${{ secrets.CPANEL_PASSPHRASE }}
           port: ${{ secrets.CPANEL_PORT }}
           source: "index.js,package.json,package-lock.json"
           target: ${{ secrets.CPANEL_APP_ROOT }}
